@@ -6,7 +6,7 @@
 <title>JAG</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #0B1220;
@@ -42,10 +42,10 @@
   }
 
   .logo {
-    font-family: var(--font-display);
+    font-family: "Cormorant Garamond", serif;
     font-weight: 500;
-    font-size: 1.5rem;
-    letter-spacing: 0.04em;
+    font-size: 2.1rem;
+    letter-spacing: 0.06em;
     color: var(--text);
   }
   .logo span { color: var(--accent); }
@@ -62,7 +62,7 @@
   nav a:hover { color: var(--accent); }
 
   main {
-    padding: 4rem 2rem;
+    padding: 4rem 2rem 2rem;
     max-width: 700px;
     margin: 0 auto;
     text-align: center;
@@ -75,7 +75,46 @@
     margin-bottom: 0.5rem;
   }
 
-  main p { color: var(--text-dim); }
+  main p.tagline { color: var(--text-dim); margin-bottom: 0; }
+
+  /* ---- Bloc auteur façon Distill ---- */
+  .byline {
+    max-width: 700px;
+    margin: 3rem auto 0;
+    padding: 2rem;
+    border-top: 1px solid var(--line);
+    border-bottom: 1px solid var(--line);
+    text-align: left;
+  }
+
+  .byline-grid {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(120px, 1fr));
+    column-gap: 2rem;
+    row-gap: 0.6rem;
+  }
+
+  .byline-label {
+    font-size: 0.7rem;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: var(--accent);
+    margin: 0 0 0.4rem;
+  }
+
+  .byline-value {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.05rem;
+    color: var(--text);
+    margin: 0;
+  }
+
+  .byline-sub {
+    font-size: 0.85rem;
+    color: var(--text-dim);
+    margin: 0.15rem 0 0;
+  }
 </style>
 </head>
 <body>
@@ -91,8 +130,28 @@
 
 <main>
   <h1>Bonjour !</h1>
-  <p>Mon site est en ligne 🎉</p>
+  <p class="tagline">Mon site est en ligne 🎉</p>
 </main>
+
+<div class="byline">
+  <div class="byline-grid">
+    <p class="byline-label">Auteurs</p>
+    <p class="byline-label">Affiliations</p>
+    <p class="byline-label">Soumission</p>
+
+    <p class="byline-value">Emilien Jemelen</p>
+    <p class="byline-value">HeKa</p>
+    <p class="byline-value">VISxAI 2026</p>
+
+    <p class="byline-value">Safa Agouram</p>
+    <p class="byline-value">ENSIIE</p>
+    <p></p>
+
+    <p class="byline-value">Julia Gambaraza</p>
+    <p class="byline-value">ESPCI Paris</p>
+    <p></p>
+  </div>
+</div>
 
 </body>
 </html>
