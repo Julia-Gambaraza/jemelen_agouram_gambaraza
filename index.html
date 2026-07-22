@@ -6,14 +6,14 @@
 <title>Mapping Dead Neurons</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
-    --bg: #0B1220;
-    --text: #E8EDF4;
-    --text-dim: #8FA3BF;
-    --accent: #5EEAD4;
-    --line: #1E2E45;
+    --bg: #F5F3EE;
+    --text: #211F1B;
+    --text-dim: #6B6759;
+    --accent: #A3213F;
+    --line: #E3DFD3;
     --font-display: "Newsreader", serif;
     --font-mono: "Space Mono", monospace;
   }
@@ -36,7 +36,7 @@
     justify-content: space-between;
     padding: 1.1rem 2rem;
     border-bottom: 1px solid var(--line);
-    background: rgba(11, 18, 32, 0.85);
+    background: rgba(245, 243, 238, 0.85);
     backdrop-filter: blur(6px);
     z-index: 10;
   }
@@ -76,11 +76,12 @@
     font-size: 2.2rem;
     letter-spacing: -0.01em;
     margin-bottom: 0.5rem;
+    color: var(--text);
   }
 
   main p.tagline { color: var(--text-dim); margin-bottom: 0; }
 
-  /* ---- Bloc auteur façon Distill ---- */
+  /* ---- Distill-style byline ---- */
   .byline {
     max-width: 700px;
     margin: 3rem auto 0;
