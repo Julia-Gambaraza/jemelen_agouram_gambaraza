@@ -1,12 +1,98 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Julia Gambaraza</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JAG</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<style>
+  :root {
+    --bg: #0B1220;
+    --text: #E8EDF4;
+    --text-dim: #8FA3BF;
+    --accent: #5EEAD4;
+    --line: #1E2E45;
+    --font-display: "Newsreader", serif;
+    --font-mono: "Space Mono", monospace;
+  }
+
+  * { box-sizing: border-box; }
+
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font-family: var(--font-mono);
+    -webkit-font-smoothing: antialiased;
+  }
+
+  header {
+    position: sticky;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 1.1rem 2rem;
+    border-bottom: 1px solid var(--line);
+    background: rgba(11, 18, 32, 0.85);
+    backdrop-filter: blur(6px);
+    z-index: 10;
+  }
+
+  .logo {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 1.5rem;
+    letter-spacing: 0.04em;
+    color: var(--text);
+  }
+  .logo span { color: var(--accent); }
+
+  nav { display: flex; gap: 2rem; }
+
+  nav a {
+    color: var(--text-dim);
+    text-decoration: none;
+    font-size: 0.8rem;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+  }
+  nav a:hover { color: var(--accent); }
+
+  main {
+    padding: 4rem 2rem;
+    max-width: 700px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  main h1 {
+    font-family: var(--font-display);
+    font-weight: 500;
+    font-size: 2rem;
+    margin-bottom: 0.5rem;
+  }
+
+  main p { color: var(--text-dim); }
+</style>
 </head>
 <body>
+
+<header>
+  <div class="logo">JA<span>G</span></div>
+  <nav>
+    <a href="#">Projet</a>
+    <a href="#">GMIC</a>
+    <a href="https://github.com/Julia-Gambaraza" target="_blank">GitHub</a>
+  </nav>
+</header>
+
+<main>
   <h1>Bonjour !</h1>
   <p>Mon site est en ligne 🎉</p>
+</main>
+
 </body>
 </html>
