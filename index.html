@@ -1,9 +1,9 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>JAG</title>
+<title>Mapping Dead Neurons</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500&family=Newsreader:ital,opsz,wght@0,6..72,500;1,6..72,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
@@ -42,13 +42,15 @@
   }
 
   .logo {
-    font-family: "Cormorant Garamond", serif;
-    font-weight: 500;
-    font-size: 2.1rem;
-    letter-spacing: 0.06em;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 1.4rem;
+    letter-spacing: -0.01em;
     color: var(--text);
   }
   .logo span { color: var(--accent); }
+
+  .accent-letter { color: var(--accent); }
 
   nav { display: flex; gap: 2rem; }
 
@@ -69,9 +71,10 @@
   }
 
   main h1 {
-    font-family: var(--font-display);
-    font-weight: 500;
-    font-size: 2rem;
+    font-family: var(--font-mono);
+    font-weight: 700;
+    font-size: 2.2rem;
+    letter-spacing: -0.01em;
     margin-bottom: 0.5rem;
   }
 
@@ -120,24 +123,24 @@
 <body>
 
 <header>
-  <div class="logo">JA<span>G</span></div>
+  <div class="logo"><span>M</span><span>D</span><span>N</span></div>
   <nav>
-    <a href="#">Projet</a>
+    <a href="#">Project</a>
     <a href="#">GMIC</a>
     <a href="https://github.com/Julia-Gambaraza" target="_blank">GitHub</a>
   </nav>
 </header>
 
 <main>
-  <h1>Bonjour !</h1>
-  <p class="tagline">Mon site est en ligne 🎉</p>
+  <h1><span class="accent-letter">M</span>apping <span class="accent-letter">D</span>ead <span class="accent-letter">N</span>eurons</h1>
+  <p class="tagline">Finding dead neurons in GMIC</p>
 </main>
 
 <div class="byline">
   <div class="byline-grid">
-    <p class="byline-label">Auteurs</p>
+    <p class="byline-label">Authors</p>
     <p class="byline-label">Affiliations</p>
-    <p class="byline-label">Soumission</p>
+    <p class="byline-label">Submission</p>
 
     <p class="byline-value">Emilien Jemelen</p>
     <p class="byline-value">HeKa</p>
