@@ -6,7 +6,7 @@
 <title>Mapping Dead Neurons</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Spectral:wght@400;500&family=Public+Sans:wght@400;600&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
   :root {
     --bg: #F5F3EE;
@@ -79,7 +79,10 @@
     color: var(--text);
   }
 
-  main p.tagline { color: var(--text-dim); margin-bottom: 0; }
+  main p.tagline {
+    color: var(--text-dim);
+    margin-bottom: 0;
+  }
 
   /* ---- Distill-style byline ---- */
   .byline {
@@ -120,6 +123,32 @@
     color: var(--text-dim);
     margin: 0.15rem 0 0;
   }
+
+  .intro {
+    max-width: 700px;
+    margin: 3rem auto 0;
+    padding: 0 2rem;
+    text-align: left;
+  }
+
+  .intro p {
+    font-family: "Public Sans", sans-serif;
+    font-size: 1.05rem;
+    line-height: 1.75;
+    text-align: justify;
+    hyphens: auto;
+    color: var(--text);
+    margin: 0 0 1.4rem;
+  }
+
+  .intro strong {
+    color: var(--accent);
+    font-weight: 600;
+  }
+
+  .intro a {
+    color: var(--accent);
+  }
 </style>
 </head>
 <body>
@@ -157,6 +186,11 @@
     <p class="byline-value"></p>
   </div>
 </div>
+
+<section class="intro">
+  <p>A neuron is considered <strong>dead</strong> when it stops responding altogether: its output stays at zero for every input, regardless of what the network is asked to process. This is a common side effect of ReLU activations. Once a neuron's weights are pushed into a region where the gradient can no longer flow through it, the neuron stops learning and never recovers, quietly wasting a slice of the model's capacity.</p>
+  <p>In this piece, we open up <a href="https://github.com/nyukat/GMIC" target="_blank">GMIC</a>, a two-scale model that reads mammograms by combining a global view of the breast with local, high-resolution glimpses of suspicious regions, and map out which of its neurons have gone dark. Where in the network does this happen, and what does it cost the model?</p>
+</section>
 
 </body>
 </html>
